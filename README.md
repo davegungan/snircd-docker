@@ -1,4 +1,4 @@
-#              snircd-docker
+#         snircd-docker
 QuakeNet's snircd IRC Server in a Docker container.
 
 This is based on Asuka ircd and version u2.10.12 of the Undernet ircd.
