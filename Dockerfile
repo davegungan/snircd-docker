@@ -1,5 +1,4 @@
 FROM ubuntu
-#FROM debian
 
 MAINTAINER Dave Gungan <gm@quakenet.org>
 
@@ -8,10 +7,10 @@ RUN adduser -q snircd
 #general installs 
 RUN apt-get update && apt-get install -y wget gcc make flex bison
 
-#tests
+#uncomment for debugging inside the container
 #RUN apt-get install -y net-tools
 #RUN apt-get update && apt-get install -y irssi nano
-RUN echo "root:root" | chpasswd
+#RUN echo "root:root" | chpasswd
 
 WORKDIR /home/snircd
 USER snircd
